@@ -5,11 +5,11 @@ int v=0,c=0;
 
 %%
 
-[a,e,i,o,u,A,E,I,O,U]  {v++;}
+[aeiouAEIOU]  {v++;}
 
-[0-9]
+[bcdfghjklmnpqrstvwxyzBCDFGHJKLMNPQRSTVWXYZ] {c++;} 
 
-. {c++;} 
+.
 
 %%
 
